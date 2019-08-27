@@ -8,6 +8,7 @@
 *ngFor="let router of routers; let i=index " value={{i}}>{{router.name}}</option>
   </select></p>
 
-<div></div>
-  <p *ngIf="router">You Selected: {{router.name}}</p>
+<div *ngIf="router" class="mainContent"></div>
+  <div *ngIf="router">You Selected: {{router.name}}</div>
+  <div *ngIf="router">{{router.nodeLegs}}</div>
 </div>

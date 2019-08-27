@@ -4,7 +4,10 @@
   
  
 </p>
-<p class="panel-body"><select ><option>Select a Router</option>
-  <option>Router1</option><option>Router2</option><option>Router3</option></select></p>
+<p class="panel-body"><select [(ngModel)]="DD1" (change)="handlerFunction($event)"><option value="" >Select a Router</option><option 
+*ngFor="let router of routers; let i=index " value={{i}}>{{router.name}}</option>
+  </select></p>
 
+<div></div>
+  <p *ngIf="router">You Selected: {{router.name}}</p>
 </div>

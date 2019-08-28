@@ -1,23 +1,30 @@
-.panel-heading,.panel-body
+.panel-heading
 {
     padding-left:45%;
     font-size: large;
     
 }
+.panel-body
+{
+    padding-left:43%; 
+    font-size: large;
+}
 .panel{
     margin-top:5%;
-    height: 80vh;
+    height: 60vh;
 } 
 .mainContent
 {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    
-  border:1px solid black;
+    border:1px solid black;
 }
-.mainContent>div
+.mainContent>div,.mainContent
 {
-    border:1px solid black
+    margin-top:25%;
+    width:50%;
+    margin:auto;
+    height:20%;
+    font-size: large;
+ 
 }
+
 
